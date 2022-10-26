@@ -6,6 +6,28 @@
     enableURLDetection: true
   };
 </script>
+<script>
+  window.Appcues.identify(
+  "12345", // unique, required
+  {
+
+    // recommended (optional) properties
+
+    planTier: "Standard", // Current user’s plan tier
+    role: "Admin", // Current user’s role or permissions
+    accountId: "1234", // Current user's account ID
+    firstName: "Eashan", // current user's first name
+
+    // additional suggestions
+
+    companyName: "Skit", // Current user’s company name
+    email: "eashan.kadam@skit.ai", // Current user's email
+    location: "90210", // a zipcode, state, or country enables location-based targeting
+    version: "2.0", // users on different versions may need to see different content
+    language: "English", // for multi-language applications
+  }
+);
+  </script>
 <script src="//fast.appcues.com/126975.js"></script>
   <meta charset="utf-8">
   <title>Angular Quickstart</title>
